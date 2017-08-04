@@ -1,0 +1,13 @@
+{
+  "source": "./src",
+  "destination": "./docs",
+  "access": ["public", "protected"],
+  "includeSource": false,
+  "excludes": ["\\.spec\\.(js|es6)$","ducks\\.*","utils\\.*"],
+  "plugins": [
+    { "name": "esdoc-es7-plugin" }
+  ],
+  "manual": {
+    "changelog": ["./CHANGELOG.md"]
+  }
+}
