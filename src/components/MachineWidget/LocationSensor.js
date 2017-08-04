@@ -40,6 +40,7 @@ export class LocationSensor extends SICKComponent {
   componentDidUpdate () {
     const data = this.props.data
     const color = this.props.color
+    // d3.select("g").remove()
 
     // var tip = d3.select('#machine-widget')
     //   .append('div')
@@ -104,10 +105,9 @@ export class LocationSensor extends SICKComponent {
     d3.selectAll("circle")
       .data(data)
       .append("svg:title")
-
       .text(function(d, i) {
         if (d.state === 0 ){
-          return "Sensor " + (i+1)
+          return "Sensor " + (i+1) 
         }
         else{
           return "Sensor " + (i+1)
